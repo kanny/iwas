@@ -88,21 +88,21 @@ def update_repo(event)
     Dir.mkdir(dpath)
     fpath = "#{dpath}/placeholder"
     File.open(fpath,"w+") do |f|
-      f.puts "Don't elase this file"
+      f.puts "Don't remove this file"
     end
   when "CreateGroup"
     dpath = "#{GROUP_DIR_PATH}/#{event.group}"
     Dir.mkdir(dpath)
     fpath = "#{dpath}/placeholder"
     File.open(fpath,"w+") do |f|
-      f.puts "Don't elase this file"
+      f.puts "Don't remove this file"
     end
   when "CreateRole"
     dpath = "#{ROLE_DIR_PATH}/#{event.role}"
     Dir.mkdir(dpath)
     fpath = "#{dpath}/placeholder"
     File.open(fpath,"w+") do |f|
-      f.puts "Don't elase this file"
+      f.puts "Don't remove this file"
     end
   when "DeleteUser"
     fpath = "#{USER_DIR_PATH}/#{event.user}"
