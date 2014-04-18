@@ -132,10 +132,7 @@ messages = []
 files = []
 
 sqs = Aws::SQS.new
-sqs = Aws.sqs
-
 s3 = Aws::S3.new
-s3 = Aws.s3
 
 Dir.mkdir(LOG_DIR) unless Dir.exist?(LOG_DIR)
 
